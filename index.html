@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>重庆冠齐峰广告中心 - 物流运输行业新闻网站</title>
+  <meta name="description" content="提供中国物流运输新闻、货车品牌及价格、货运保险知识、货车出险理赔需知等最新行业资讯">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- 使用了Font Awesome图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- 头部导航 -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="重庆冠齐峰广告中心Logo">
+        <div class="logo-text">
+          <h1>重庆冠齐峰广告中心</h1>
+          <p>物流运输行业资讯平台</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">首页</a></li>
+          <li><a href="pages/logistics_news.html">物流运输新闻</a></li>
+          <li><a href="pages/truck_brands.html">货车品牌价格</a></li>
+          <li><a href="pages/logistics_insurance.html">货运保险知识</a></li>
+          <li><a href="pages/insurance_claims.html">出险理赔须知</a></li>
+          <li><a href="#about">关于我们</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 搜索栏 -->
+  <div class="search-container">
+    <div class="search-wrapper">
+      <form class="search-form" id="search-form">
+        <input type="text" placeholder="输入关键词搜索行业资讯..." id="search-input">
+        <button type="submit"><i class="fas fa-search"></i> 搜索</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- 主内容区 -->
+  <div class="container content-wrapper">
+    <!-- 左侧广告位 -->
+    <aside class="ad-sidebar">
+      <div class="ad-container" id="left-ad">
+        <a href="#" class="ad-link">
+          <img src="images/banner1.jpg" alt="广告位" id="left-ad-image">
+        </a>
+      </div>
+    </aside>
+
+    <!-- 主要内容 -->
+    <main class="main-content">
+      <!-- 轮播图 -->
+      <div class="carousel" id="home-carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/banner2.jpg" alt="物流运输新闻">
+            <div class="carousel-caption">
+              <h3>2024年全国物流运行情况通报</h3>
+              <p>物流运行总体平稳，社会物流总额增速稳中有升，社会物流成本稳步下降</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner3.jpg" alt="货运保险知识">
+            <div class="carousel-caption">
+              <h3>了解货运保险分类与选购技巧</h3>
+              <p>为您的货物运输提供全面保障，降低物流风险</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner4.jpg" alt="货车品牌及价格">
+            <div class="carousel-caption">
+              <h3>2024年货车十大品牌排行榜</h3>
+              <p>最新货车品牌排名及价格参考，助您做出明智选择</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <span class="carousel-indicator active" data-slide="0"></span>
+          <span class="carousel-indicator" data-slide="1"></span>
+          <span class="carousel-indicator" data-slide="2"></span>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-control prev-button">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-control next-button">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 物流运输新闻板块 -->
+      <section class="news-section">
+        <div class="section-header">
+          <h2 class="section-title">中国物流运输新闻</h2>
+          <a href="pages/logistics_news.html" class="section-more">查看更多 <i class="fas fa-angle-right"></i></a>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-card-image">
+              <img src="images/banner2.jpg" alt="物流运行情况">
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-category">行业报告</div>
+              <h3 class="news-card-title">2024年全国物流运行情况通报</h3>
+              <p class="news-card-excerpt">2024年，物流运行总体平稳，社会物流总额增速稳中有升，社会物流成本稳步下降，物流运行效率有所改善...</p>
+              <div class="news-card-meta">
+                <span class="date">2025-02-11</span>
+                <span class="source">国家发展改革委</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-card-image">
+              <img src="images/banner3.jpg" alt="物流业总收入">
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-category">市场动态</div>
+              <h3 class="news-card-title">物流业总收入增速回升</h3>
+              <p class="news-card-excerpt">2024年物流业总收入13.8万亿元，同比增长4.9%，增速比上年提高1个百分点...</p>
+              <div class="news-card-meta">
+                <span class="date">2025-02-11</span>
+                <span class="source">中国物流与采购联合会</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-card-image">
+              <img src="images/banner2.jpg" alt="物流运行优化">
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-category">行业趋势</div>
+              <h3 class="news-card-title">物流运行持续优化 仓储需求不断扩大</h3>
+              <p class="news-card-excerpt">中国物流与采购联合会公布2023年12月份中国物流业景气指数为53.5%...</p>
+              <div class="news-card-meta">
+                <span class="date">2024-01-03</span>
+                <span class="source">央视网</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 货车品牌及价格板块 -->
+      <section class="news-section">
+        <div class="section-header">
+          <h2 class="section-title">货车品牌及价格</h2>
+          <a href="pages/truck_brands.html" class="section-more">查看更多 <i class="fas fa-angle-right"></i></a>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-card-image">
+              <img src="images/banner4.jpg" alt="重型货车品牌排行榜">
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-category">品牌排名</div>
+              <h3 class="news-card-title">2024年货车十大品牌排行榜</h3>
+              <p class="news-card-excerpt">福田汽车、东风汽车、一汽解放位列2024年重型货车品牌排行榜前三名...</p>
+              <div class="news-card-meta">
+                <span class="date">2025-01-15</span>
+                <span class="source">中国品牌网</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-card-image">
+              <img src="images/banner4.jpg" alt="重卡市场销量">
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-category">市场数据</div>
+              <h3 class="news-card-title">2024年重卡市场销量情况</h3>
+              <p class="news-card-excerpt">2024年重卡市场共计销售约90万辆，同比下降1%。其中中国重汽、一汽解放、陕汽集团和东风汽车累计销量均超过10万辆...</p>
+              <div class="news-card-meta">
+                <span class="date">2024-12-15</span>
+                <span class="source">中国汽车工业协会</span>
+              </div>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-card-image">
+              <img src="images/banner4.jpg" alt="轻卡价格区间">
+            </div>
+            <div class="news-card-content">
+              <div class="news-card-category">价格参考</div>
+              <h3 class="news-card-title">主要货车型号及价格区间</h3>
+              <p class="news-card-excerpt">福田欧马可系列、解放轻卡系列、中国重汽系列等主要货车型号及最新价格区间...</p>
+              <div class="news-card-meta">
+                <span class="date">2024-11-20</span>
+                <span class="source">卡车之家</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 两列布局：货运保险知识和货车出险理赔需知 -->
+      <div class="news-grid" style="grid-template-columns: 1fr 1fr; gap: 40px;">
+        <!-- 货运保险知识板块 -->
+        <section class="news-section">
+          <div class="section-header">
+            <h2 class="section-title">货运保险知识</h2>
+            <a href="pages/logistics_insurance.html" class="section-more">查看更多 <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="news-list">
+            <li class="news-list-item">
+              <div class="title"><a href="pages/logistics_insurance.html#insurance-types">货车保险分类全解析</a></div>
+            </li>
+            <li class="news-list-item">
+              <div class="title"><a href="pages/logistics_insurance.html#insurance-selection">货车司机和物流公司如何选择保险</a></div>
+            </li>
+            <li class="news-list-item">
+              <div class="title"><a href="pages/logistics_insurance.html#insurance-cost">货车保险费用与如何购买更划算</a></div>
+            </li>
+            <li class="news-list-item">
+              <div class="title"><a href="pages/logistics_insurance.html#insurance-difference">物流运输保险与物流责任保险的区别</a></div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 货车出险理赔需知板块 -->
+        <section class="news-section">
+          <div class="section-header">
+            <h2 class="section-title">出险理赔须知</h2>
+            <a href="pages/insurance_claims.html" class="section-more">查看更多 <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="news-list">
+            <li class="news-list-item">
+              <div class="title"><a href="pages/insurance_claims.html#claims-process">货运险理赔流程与注意事项</a></div>
+            </li>
+            <li class="news-list-item">
+              <div class="title"><a href="pages/insurance_claims.html#accident-types">单方事故与多方事故理赔程序</a></div>
+            </li>
+            <li class="news-list-item">
+              <div class="title"><a href="pages/insurance_claims.html#case-studies">常见货车理赔案例与实务问题</a></div>
+            </li>
+            <li class="news-list-item">
+              <div class="title"><a href="pages/insurance_claims.html#faq">货车保险理赔常见问题解答</a></div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <!-- 右侧广告位 -->
+    <aside class="ad-sidebar">
+      <div class="ad-container" id="right-ad">
+        <a href="#" class="ad-link">
+          <img src="images/banner1.jpg" alt="广告位" id="right-ad-image">
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 页脚 -->
+  <footer id="about">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3 class="footer-title">关于我们</h3>
+        <p>重庆冠齐峰广告中心成立于2010年，是一家专业从事广告设计、制作、发布及网络营销推广的综合性广告服务企业。</p>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-title">快速链接</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="pages/logistics_news.html">物流运输新闻</a></li>
+          <li><a href="pages/truck_brands.html">货车品牌价格</a></li>
+          <li><a href="pages/logistics_insurance.html">货运保险知识</a></li>
+          <li><a href="pages/insurance_claims.html">出险理赔须知</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-title">联系我们</h3>
+        <ul class="footer-contact-info">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>重庆市渝中区解放碑步行街88号时代广场25楼</span>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>电话: 023-88889999</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>邮箱: info@cqgqf.com</span>
+          </li>
+          <li>
+            <i class="fas fa-clock"></i>
+            <span>工作时间: 周一至周五 9:00-18:00</span>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3 class="footer-title">关注我们</h3>
+        <p>关注我们的社交媒体，获取最新资讯</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-weixin"></i></a>
+          <a href="#"><i class="fab fa-weibo"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 重庆冠齐峰广告中心. 版权所有.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript引入 -->
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

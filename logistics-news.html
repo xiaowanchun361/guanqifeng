@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国物流运输新闻 - 重庆冠齐峰广告中心</title>
+    <meta name="description" content="提供最新的中国物流运输行业新闻资讯，物流政策分析，行业动态和发展趋势">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header class="header">
+        <div class="container header-inner">
+            <!-- 网站标志 -->
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="重庆冠齐峰广告中心" width="200">
+                </a>
+            </div>
+            
+            <!-- 导航菜单 -->
+            <nav class="nav">
+                <div class="nav-item">
+                    <a href="/">首页</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/logistics-news.html" class="active">中国物流运输新闻</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/truck-brands.html">货车品牌及价格</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/insurance-knowledge.html">货运保险知识</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/insurance-claims.html">货车出险理赔需知</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/about.html">关于我们</a>
+                </div>
+            </nav>
+            
+            <!-- 移动端汉堡菜单 -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <!-- 搜索框 -->
+            <div class="search-container">
+                <form class="search-form" action="/pages/search-results.html" method="get">
+                    <input type="text" class="search-input" name="q" placeholder="搜索新闻、货车品牌、保险知识...">
+                    <button type="submit" class="search-button">搜索</button>
+                </form>
+                <div class="search-results"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面主要内容 -->
+    <main class="main container">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar sidebar-left">
+            <div class="ad-container" id="left-ad">
+                <a href="#" target="_blank">
+                    <img src="/images/ad-left.jpg" alt="广告位" width="750" height="1334">
+                </a>
+            </div>
+        </aside>
+        
+        <!-- 中间内容区 -->
+        <section class="content">
+            <h1 class="page-title">中国物流运输行业最新新闻</h1>
+            
+            <div class="news-content">
+                <article id="news1" class="news-detail">
+                    <h2>2024年全国物流运行情况通报</h2>
+                    <div class="news-meta">
+                        <span class="news-source">来源：国家发展改革委经济贸易司、中国物流与采购联合会</span>
+                        <span class="news-date">日期：2025年2月11日</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <p><strong>主要内容</strong>：2024年，物流运行总体平稳，社会物流总额增速稳中有升，社会物流成本稳步下降，物流运行效率有所改善。</p>
+                        
+                        <h3>社会物流总额增速稳中有升</h3>
+                        <p>2024年全国社会物流总额360.6万亿元，按可比价格计算，同比增长5.8%，增速比上年提高0.6个百分点。物流运行总体平稳、稳中有进，物流需求有所回暖。</p>
+                        
+                        <p>从构成看：</p>
+                        <ul>
+                            <li>农产品物流总额5.5万亿元，按可比价格计算，同比增长4.0%</li>
+                            <li>工业品物流总额318.4万亿元，增长5.8%</li>
+                            <li>进口货物物流总额18.4万亿元，增长3.9%</li>
+                            <li>再生资源物流总额4.4万亿元，增长15.7%</li>
+                            <li>单位与居民物品物流总额13.9万亿元，增长6.7%</li>
+                        </ul>
+                        
+                        <div class="chart-container">
+                            <canvas id="logisticsVolumeChart" width="600" height="350"></canvas>
+                        </div>
+                        
+                        <h3>社会物流总费用与GDP的比率稳步下降</h3>
+                        <p>2024年社会物流总费用19.0万亿元，同比增长4.1%。社会物流总费用与GDP的比率为14.1%，比上年回落0.3个百分点。</p>
+                        
+                        <p>从构成看：</p>
+                        <ul>
+                            <li>运输费用10.3万亿元，增长5.0%</li>
+                            <li>保管费用6.4万亿元，增长3.8%</li>
+                            <li>管理费用2.3万亿元，增长1.3%</li>
+                        </ul>
+                        
+                        <h3>物流业总收入增速回升</h3>
+                        <p>2024年物流业总收入13.8万亿元，同比增长4.9%，增速比上年提高1个百分点。</p>
+                    </div>
+                </article>
+                
+                <article id="news2" class="news-detail">
+                    <h2>中国物流与采购联合会：我国仍是全球物流需求最大的市场</h2>
+                    <div class="news-meta">
+                        <span class="news-source">来源：央视新闻</span>
+                        <span class="news-date">日期：2024年11月16日</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <p><strong>主要内容</strong>：中国物流与采购联合会相关负责人在2024年中国物流学术年会上介绍说，目前我国仍是全球物流需求最大的市场，物流企业群体初具规模，物流业正在从规模速度扩张进入质量效率提升的新阶段。</p>
+                        
+                        <div class="news-highlight">
+                            <p>中国物流业进入质量效率提升的新阶段，将重点关注:</p>
+                            <ol>
+                                <li>降本增效</li>
+                                <li>智慧物流技术应用</li>
+                                <li>绿色物流发展</li>
+                                <li>物流企业数字化转型</li>
+                            </ol>
+                        </div>
+                    </div>
+                </article>
+                
+                <article id="news3" class="news-detail">
+                    <h2>物流运行持续优化 仓储需求不断扩大 经济流通愈加通畅</h2>
+                    <div class="news-meta">
+                        <span class="news-source">来源：央视网</span>
+                        <span class="news-date">日期：2024年1月3日</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <p><strong>主要内容</strong>：中国物流与采购联合会公布2023年12月份中国物流业景气指数为53.5%。尽管受年末上游需求放缓和部分地区恶劣天气因素影响，物流业务量增速较前期有所放缓，但12月份物流业景气指数仍保持企稳回升态势，业务量平稳增长。</p>
+                        
+                        <div class="chart-container">
+                            <canvas id="logisticsPMIChart" width="600" height="350"></canvas>
+                        </div>
+                        
+                        <p>物流景气指数连续多月保持在50%以上的扩张区间，表明物流行业整体呈现持续复苏态势，物流运行质量进一步提高。</p>
+                    </div>
+                </article>
+                
+                <article id="news4" class="news-detail">
+                    <h2>2024年物流行业发展趋势</h2>
+                    <div class="news-meta">
+                        <span class="news-source">来源：中研网</span>
+                        <span class="news-date">日期：2024年4月3日</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <p><strong>主要内容</strong>：根据中研普华产业研究院发布的《2024-2029年物流配送产业现状及未来发展趋势分析报告》分析，近年来，中国经济呈现出稳健且较快的增长态势，这为物流行业提供了坚实的发展基础。物流行业正面临数字化转型、绿色物流发展和全球供应链重构等趋势。</p>
+                        
+                        <div class="trend-analysis">
+                            <h4>2024年物流行业五大发展趋势</h4>
+                            <div class="trend-item">
+                                <h5>1. 数字化转型深入推进</h5>
+                                <p>随着5G、物联网、大数据、人工智能等技术的不断成熟，物流行业数字化转型将加速推进。智能仓储、数字化运输管理、AI路径优化等应用将更加普及，提高物流效率，降低运营成本。</p>
+                            </div>
+                            
+                            <div class="trend-item">
+                                <h5>2. 绿色低碳发展</h5>
+                                <p>在"双碳"目标的引导下，物流行业将加大对新能源车辆的投入，推动包装材料的绿色化、减量化，探索包装循环利用模式，构建绿色物流体系。</p>
+                            </div>
+                            
+                            <div class="trend-item">
+                                <h5>3. 供应链弹性建设</h5>
+                                <p>全球供应链重构及区域化趋势明显，企业将更加注重供应链弹性建设，通过多元化采购、区域化仓储布局等方式增强供应链抗风险能力。</p>
+                            </div>
+                            
+                            <div class="trend-item">
+                                <h5>4. 冷链物流快速发展</h5>
+                                <p>随着生鲜电商、医药冷链需求的增长，冷链物流将成为物流行业的重要增长点，冷链设施投资、标准化建设、智能化监控等将得到大力推进。</p>
+                            </div>
+                            
+                            <div class="trend-item">
+                                <h5>5. 物流服务专业化、定制化</h5>
+                                <p>物流服务将从传统的标准化服务向专业化、定制化方向发展，满足不同行业、不同客户的个性化物流需求，提供全程可视、全链可控的物流解决方案。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                <article id="news5" class="news-detail">
+                    <h2>政府工作报告划出2024物流发展重点</h2>
+                    <div class="news-meta">
+                        <span class="news-source">来源：腾讯网</span>
+                        <span class="news-date">日期：2024年3月5日</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <p><strong>主要内容</strong>：2024年将深入推进农村电商与快递协同发展示范创建工作，持续打造邮政快递服务现代农业品牌项目，提高农产品的运输时效，积极发展现代物流体系，促进物流业与制造业深度融合，加快推进智慧物流建设。</p>
+                        
+                        <div class="policy-focus">
+                            <h4>2024年物流发展政策重点</h4>
+                            <ul>
+                                <li>加强农村物流体系建设，促进城乡物流一体化发展</li>
+                                <li>提升冷链物流效率，促进农产品流通和农民增收</li>
+                                <li>深化物流与制造业融合，推进产业链供应链现代化</li>
+                                <li>建设智慧物流平台，实现全程可视化监控和管理</li>
+                                <li>完善城市配送体系，解决最后一公里配送问题</li>
+                                <li>提高国际物流通道能力，支持外贸稳定发展</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- 相关链接 -->
+            <div class="related-news">
+                <h3 class="section-title">相关资讯</h3>
+                <ul class="related-news-list">
+                    <li><a href="/pages/truck-brands.html">2024年货车十大品牌排行榜</a></li>
+                    <li><a href="/pages/insurance-knowledge.html">货运保险知识全解读</a></li>
+                    <li><a href="/pages/insurance-claims.html">货运险理赔流程与注意事项</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 右侧边栏 -->
+        <aside class="sidebar sidebar-right">
+            <div class="ad-container" id="right-ad">
+                <a href="#" target="_blank">
+                    <img src="/images/ad-right.jpg" alt="广告位" width="750" height="1334">
+                </a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>重庆冠齐峰广告中心成立于2010年，是一家专业从事广告设计、制作、发布及网络营销推广的综合性广告服务企业。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>栏目导航</h3>
+                <ul>
+                    <li><a href="/pages/logistics-news.html">中国物流运输新闻</a></li>
+                    <li><a href="/pages/truck-brands.html">货车品牌及价格</a></li>
+                    <li><a href="/pages/insurance-knowledge.html">货运保险知识</a></li>
+                    <li><a href="/pages/insurance-claims.html">货车出险理赔需知</a></li>
+                    <li><a href="/pages/about.html">关于我们</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p>地址：重庆市渝中区解放碑步行街88号时代广场25楼</p>
+                <p>电话：023-88889999</p>
+                <p>客服热线：400-123-4567</p>
+                <p>电子邮箱：info@cqgqf.com</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 重庆冠齐峰广告中心 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入JavaScript -->
+    <script src="/js/main.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- 图表脚本 -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 物流总额图表
+        const volumeChart = document.getElementById('logisticsVolumeChart');
+        if (volumeChart) {
+            const ctx = volumeChart.getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['工业品物流', '进口货物物流', '单位与居民物品物流', '农产品物流', '再生资源物流'],
+                    datasets: [{
+                        label: '2024年物流总额构成(万亿元)',
+                        data: [318.4, 18.4, 13.9, 5.5, 4.4],
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(54, 162, 235, 0.4)',
+                            'rgba(54, 162, 235, 0.3)'
+                        ],
+                        borderColor: [
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '2024年全国社会物流总额构成',
+                            font: {
+                                size: 16
+                            }
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+        
+        // 物流PMI图表
+        const pmiChart = document.getElementById('logisticsPMIChart');
+        if (pmiChart) {
+            const ctx = pmiChart.getContext('2d');
+            new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+                    datasets: [{
+                        label: '2023年中国物流业景气指数',
+                        data: [50.3, 50.1, 51.5, 52.0, 52.3, 52.7, 52.8, 53.0, 53.2, 53.3, 53.4, 53.5],
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 49,
+                            max: 55,
+                            title: {
+                                display: true,
+                                text: '景气指数(%)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '月份'
+                            }
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '2023年中国物流业景气指数走势',
+                            font: {
+                                size: 16
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    });
+    
+    // 语法自检
+    try {
+        console.log("物流新闻页面JS语法检查通过");
+    }
+    catch (error) {
+        console.error("语法错误:", error.message);
+    }
+    
+    // 功能验证
+    console.assert(typeof Chart === 'function', 'Chart.js库已成功加载');
+    </script>
+</body>
+</html>

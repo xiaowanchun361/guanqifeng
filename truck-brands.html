@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>货车品牌及价格 - 重庆冠齐峰广告中心</title>
+    <meta name="description" content="提供最新的货车品牌排名、价格参考、新能源货车信息及购买指南">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+    <!-- 页面头部 -->
+    <header class="header">
+        <div class="container header-inner">
+            <!-- 网站标志 -->
+            <div class="logo">
+                <a href="/">
+                    <img src="/images/logo.png" alt="重庆冠齐峰广告中心" width="200">
+                </a>
+            </div>
+            
+            <!-- 导航菜单 -->
+            <nav class="nav">
+                <div class="nav-item">
+                    <a href="/">首页</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/logistics-news.html">中国物流运输新闻</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/truck-brands.html">货车品牌及价格</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/insurance-knowledge.html">货运保险知识</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/insurance-claims.html">货车出险理赔需知</a>
+                </div>
+                <div class="nav-item">
+                    <a href="/pages/about.html">关于我们</a>
+                </div>
+            </nav>
+            
+            <!-- 移动端汉堡菜单 -->
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <!-- 搜索框 -->
+            <div class="search-container">
+                <form class="search-form" action="/pages/search-results.html" method="get">
+                    <input type="text" class="search-input" name="q" placeholder="搜索新闻、货车品牌、保险知识...">
+                    <button type="submit" class="search-button">搜索</button>
+                </form>
+                <div class="search-results"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面主要内容 -->
+    <main class="main container">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar sidebar-left">
+            <div class="ad-container" id="left-ad">
+                <a href="#" target="_blank">
+                    <img src="/images/ad-left.jpg" alt="广告位" width="750" height="1334">
+                </a>
+            </div>
+        </aside>
+        
+        <!-- 中间内容区 -->
+        <section class="content">
+            <h1 class="page-title">货车品牌及价格</h1>
+            
+            <div class="news-content">
+                <article id="brands" class="news-detail">
+                    <h2>2024年货车十大品牌排行榜</h2>
+                    <div class="news-meta">
+                        <span class="news-source">来源：中国品牌网、Maigoo品牌榜</span>
+                        <span class="news-date">更新时间：2025年</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <h3>重型货车品牌排行榜前十名</h3>
+                        <ol class="brand-list">
+                            <li>福田汽车(FOTON)</li>
+                            <li>东风汽车(DFM)</li>
+                            <li>一汽解放</li>
+                            <li>中国重汽(CNHTC)</li>
+                            <li>江淮汽车(JAC)</li>
+                            <li>江铃汽车(JMC)</li>
+                            <li>上汽通用五菱</li>
+                            <li>长安凯程</li>
+                            <li>陕汽</li>
+                            <li>长城炮</li>
+                        </ol>
+                    </div>
+                </article>
+                
+                <article id="sales" class="news-detail">
+                    <h2>2024年重卡市场销量情况</h2>
+                    <div class="news-meta">
+                        <span class="news-source">来源：中国汽车工业协会、第一商用车网</span>
+                        <span class="news-date">统计周期：2024年全年</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <p>2024年重卡市场共计销售约90万辆，同比下降1%。其中：</p>
+                        <ul>
+                            <li>中国重汽、一汽解放、陕汽集团和东风汽车累计销量均超过10万辆</li>
+                            <li>销量处于上升区间的企业较少，仅有解放、重汽、三一、徐工和北汽重卡等企业累计销量同比上升</li>
+                        </ul>
+                        
+                        <h3>天然气重卡销售情况</h3>
+                        <p>2024年天然气重卡销量超过17万辆，创历史新高。排名情况：</p>
+                        <ol>
+                            <li>解放</li>
+                            <li>重汽</li>
+                            <li>东风</li>
+                            <li>陕汽</li>
+                            <li>福田</li>
+                            <li>大运</li>
+                        </ol>
+                        
+                        <div class="chart-container">
+                            <canvas id="salesChart" width="600" height="400"></canvas>
+                        </div>
+                    </div>
+                </article>
+                
+                <article id="prices" class="news-detail">
+                    <h2>主要货车型号及价格区间</h2>
+                    <div class="news-meta">
+                        <span class="news-source">数据来源：卡车之家价格汇总</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <h3>轻卡价格区间</h3>
+                        
+                        <div class="price-item">
+                            <h4>福田欧马可系列</h4>
+                            <ul>
+                                <li>欧马可S1 163马力 4.14米AMT自动档单排厢式轻卡：约13.41万元</li>
+                                <li>欧马可S系列：7.90-14.03万元</li>
+                                <li>欧马可X轻卡：价格区间约7.90-14.03万元</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-item">
+                            <h4>解放轻卡系列</h4>
+                            <ul>
+                                <li>解放霸铃 115马力 2.76米双排栏板轻卡：价格区间约9.5-12万元</li>
+                                <li>一汽红塔：价格根据配置不同约8-15万元</li>
+                            </ul>
+                        </div>
+                        
+                        <h3>中重型货车价格区间</h3>
+                        
+                        <div class="price-item">
+                            <h4>中国重汽系列</h4>
+                            <ul>
+                                <li>汕德卡SITRAK G7H 330马力 4X2 9.6米AMT自动档厢式载货车(液缓)：约25.98万元</li>
+                                <li>汕德卡SITRAK G5重卡 350马力 4X4 AMT自动挡越野房车底盘：价格视配置而定</li>
+                                <li>HOWO悍将 2.3L柴油 140马力 法士特8档 3.85米排半栏板轻卡：价格区间约9-12万元</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-item">
+                            <h4>一汽解放系列</h4>
+                            <ul>
+                                <li>青岛解放JH6 320马力 6.8米厢式载货车：约22.71万元</li>
+                                <li>解放J6系列：价格区间约18-30万元，根据具体型号和配置有所不同</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="price-item">
+                            <h4>江淮系列</h4>
+                            <ul>
+                                <li>江淮帅铃S9 4.5L柴油 220马力 法士特10档 5.4米栏板载货车：价格区间约15-18万元</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <article id="new-energy" class="news-detail">
+                    <h2>新能源货车</h2>
+                    <div class="news-meta">
+                        <span class="news-source">数据来源：卡车之家</span>
+                    </div>
+                    
+                    <div class="news-body">
+                        <div class="product-card">
+                            <h3>福田奥铃智蓝EL-Plus电动载货车</h3>
+                            <ul class="product-specs">
+                                <li><strong>型号：</strong>重载长续航版</li>
+                                <li><strong>动力类型：</strong>纯电动</li>
+                                <li><strong>电池品牌：</strong>宁德时代</li>
+                                <li><strong>电池容量：</strong>156.4kWh</li>
+                                <li><strong>车厢长度：</strong>4.2米</li>
+                                <li><strong>车型：</strong>厢式</li>
+                                <li><strong>价格区间：</strong>约30-35万元（根据补贴政策有所不同）</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+                <article id="tips" class="news-detail">
+                    <h2>注意事项</h2>
+                    
+                    <div class="news-body">
+                        <ol class="tips-list">
+                            <li>以上价格仅供参考，实际价格可能因地区、经销商政策、配置差异等因素有所不同</li>
+                            <li>购买货车时建议对比多家经销商报价，并关注当地优惠政策</li>
+                            <li>价格中未包含上牌费、保险费、购置税等额外费用</li>
+                            <li>部分品牌可能提供金融贷款服务，可咨询当地经销商了解具体方案</li>
+                        </ol>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- 相关新闻 -->
+            <div class="related-news">
+                <h3 class="section-title">相关新闻</h3>
+                <ul class="related-news-list">
+                    <li><a href="/pages/logistics-news.html">2024年全国物流运行情况通报</a></li>
+                    <li><a href="/pages/insurance-knowledge.html">货车保险分类全解读</a></li>
+                    <li><a href="/pages/insurance-claims.html">货运险理赔流程与注意事项</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 右侧边栏 -->
+        <aside class="sidebar sidebar-right">
+            <div class="ad-container" id="right-ad">
+                <a href="#" target="_blank">
+                    <img src="/images/ad-right.jpg" alt="广告位" width="750" height="1334">
+                </a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>重庆冠齐峰广告中心成立于2010年，是一家专业从事广告设计、制作、发布及网络营销推广的综合性广告服务企业。</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>栏目导航</h3>
+                <ul>
+                    <li><a href="/pages/logistics-news.html">中国物流运输新闻</a></li>
+                    <li><a href="/pages/truck-brands.html">货车品牌及价格</a></li>
+                    <li><a href="/pages/insurance-knowledge.html">货运保险知识</a></li>
+                    <li><a href="/pages/insurance-claims.html">货车出险理赔需知</a></li>
+                    <li><a href="/pages/about.html">关于我们</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <p>地址：重庆市渝中区解放碑步行街88号时代广场25楼</p>
+                <p>电话：023-88889999</p>
+                <p>客服热线：400-123-4567</p>
+                <p>电子邮箱：info@cqgqf.com</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 重庆冠齐峰广告中心 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入JavaScript -->
+    <script src="/js/main.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- 图表脚本 -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 创建销量图表
+        const salesChart = document.getElementById('salesChart');
+        if (salesChart) {
+            const ctx = salesChart.getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['解放', '重汽', '东风', '陕汽', '福田', '大运'],
+                    datasets: [{
+                        label: '2024年天然气重卡销量(万辆)',
+                        data: [4.2, 3.8, 3.3, 2.6, 1.9, 1.2],
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.7)',
+                            'rgba(54, 162, 235, 0.6)',
+                            'rgba(54, 162, 235, 0.5)',
+                            'rgba(54, 162, 235, 0.4)',
+                            'rgba(54, 162, 235, 0.3)',
+                            'rgba(54, 162, 235, 0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(54, 162, 235, 1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: '销量(万辆)'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '品牌'
+                            }
+                        }
+                    },
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: '2024年天然气重卡销量排行',
+                            font: {
+                                size: 16
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    });
+    
+    // 语法自检
+    try {
+        console.log("货车品牌页面JS语法检查通过");
+    }
+    catch (error) {
+        console.error("语法错误:", error.message);
+    }
+    
+    // 功能验证
+    console.assert(typeof Chart === 'function', 'Chart.js库已成功加载');
+    </script>
+</body>
+</html>

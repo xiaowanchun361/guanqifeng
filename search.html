@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索结果 - 重庆冠齐峰广告中心</title>
+  <meta name="description" content="重庆冠齐峰广告中心物流运输新闻网站搜索结果页面">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- 页面头部 -->
+  <header class="main-header">
+    <div class="container header-container">
+      <!-- Logo区域 -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="重庆冠齐峰广告中心" width="200" height="60">
+        </a>
+      </div>
+      
+      <!-- 导航菜单 -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="pages/logistics_news.html">物流运输新闻</a></li>
+          <li><a href="pages/truck_brands.html">货车品牌价格</a></li>
+          <li><a href="pages/logistics_insurance.html">货运保险知识</a></li>
+          <li><a href="pages/insurance_claims.html">出险理赔须知</a></li>
+          <li><a href="pages/about.html">关于我们</a></li>
+        </ul>
+      </nav>
+      
+      <!-- 移动端菜单按钮 -->
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <!-- 搜索框 -->
+      <div class="search-bar">
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="搜索新闻、货车品牌、保险知识...">
+          <button type="submit"><i class="search-icon">🔍</i></button>
+        </form>
+      </div>
+    </div>
+  </header>
+  
+  <!-- 主体内容区域 -->
+  <div class="page-container">
+    <!-- 左侧广告位 -->
+    <div class="left-ad">
+      <a href="#" class="ad-link">
+        <img id="left-ad-image" src="images/banner1.jpg" alt="广告" width="750" height="1334">
+      </a>
+    </div>
+    
+    <!-- 中央内容区 -->
+    <main class="main-content">
+      <!-- 面包屑导航 -->
+      <div class="breadcrumb">
+        <a href="index.html">首页</a> &gt; <span>搜索结果</span>
+      </div>
+      
+      <!-- 搜索结果标题 -->
+      <div class="page-title">
+        <h1>搜索结果: <span id="search-keyword">关键词</span></h1>
+      </div>
+      
+      <!-- 搜索过滤器 -->
+      <div class="search-filters">
+        <div class="filter-group">
+          <label>分类筛选：</label>
+          <button class="filter-btn active" data-category="all">全部</button>
+          <button class="filter-btn" data-category="news">物流运输新闻</button>
+          <button class="filter-btn" data-category="trucks">货车品牌价格</button>
+          <button class="filter-btn" data-category="insurance">货运保险知识</button>
+          <button class="filter-btn" data-category="claims">出险理赔须知</button>
+        </div>
+        <div class="filter-group">
+          <label>排序方式：</label>
+          <button class="sort-btn active" data-sort="relevance">相关度</button>
+          <button class="sort-btn" data-sort="date">时间</button>
+        </div>
+      </div>
+      
+      <!-- 搜索结果统计 -->
+      <div class="search-stats">
+        <p>找到 <span id="search-result-count">0</span> 条与 "<span id="search-keyword-stats">关键词</span>" 相关的结果</p>
+      </div>
+      
+      <!-- 搜索结果列表 -->
+      <div class="search-results">
+        <div id="search-results-container">
+          <!-- 搜索结果将通过JavaScript动态加载 -->
+          <div class="search-empty-state">
+            <div class="empty-icon">🔍</div>
+            <h3>正在搜索...</h3>
+            <p>请稍候，系统正在查询相关内容</p>
+          </div>
+        </div>
+        
+        <!-- 分页控件 -->
+        <div class="pagination" id="search-pagination">
+          <button class="page-btn prev-btn" disabled>上一页</button>
+          <div class="page-numbers">
+            <button class="page-number active">1</button>
+            <button class="page-number">2</button>
+            <button class="page-number">3</button>
+            <span class="page-ellipsis">...</span>
+            <button class="page-number">10</button>
+          </div>
+          <button class="page-btn next-btn">下一页</button>
+        </div>
+      </div>
+    </main>
+    
+    <!-- 右侧广告位 -->
+    <div class="right-ad">
+      <a href="#" class="ad-link">
+        <img id="right-ad-image" src="images/banner2.jpg" alt="广告" width="750" height="1334">
+      </a>
+    </div>
+  </div>
+  
+  <!-- 页脚 -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <div class="company-info">
+          <h3>重庆冠齐峰广告中心</h3>
+          <p>地址：重庆市渝中区解放碑步行街88号时代广场25楼</p>
+          <p>电话：023-88889999 | 客服热线：400-123-4567</p>
+          <p>邮箱：info@cqgqf.com</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>新闻分类</h4>
+            <ul>
+              <li><a href="pages/logistics_news.html">物流运输新闻</a></li>
+              <li><a href="pages/truck_brands.html">货车品牌价格</a></li>
+              <li><a href="pages/logistics_insurance.html">货运保险知识</a></li>
+              <li><a href="pages/insurance_claims.html">出险理赔须知</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>关于我们</h4>
+            <ul>
+              <li><a href="pages/about.html">公司简介</a></li>
+              <li><a href="pages/about.html#contact">联系方式</a></li>
+              <li><a href="pages/about.html#cooperation">合作洽谈</a></li>
+            </ul>
+          </div>
+          <div class="link-group">
+            <h4>关注我们</h4>
+            <ul>
+              <li><a href="#">微信公众号</a></li>
+              <li><a href="#">微博</a></li>
+              <li><a href="#">抖音</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2024 重庆冠齐峰广告中心 版权所有</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript文件 -->
+  <script src="js/main.js"></script>
+  <script src="js/search.js"></script>
+  
+  <!-- 搜索结果页特定脚本 -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 从URL参数获取搜索关键词
+      const urlParams = new URLSearchParams(window.location.search);
+      const keyword = urlParams.get('keyword') || '';
+      
+      // 更新页面上显示的关键词
+      const searchKeywordElements = document.querySelectorAll('#search-keyword, #search-keyword-stats');
+      searchKeywordElements.forEach(el => {
+        el.textContent = keyword;
+      });
+      
+      // 如果有关键词，执行搜索
+      if (keyword) {
+        // 模拟搜索结果加载
+        setTimeout(() => {
+          performSearch(keyword);
+        }, 500);
+      } else {
+        showEmptyState('请输入搜索关键词');
+      }
+      
+      // 搜索过滤器功能
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // 移除所有按钮的活动状态
+          filterBtns.forEach(b => b.classList.remove('active'));
+          // 为当前按钮添加活动状态
+          this.classList.add('active');
+          // 重新执行搜索并应用筛选
+          if (keyword) {
+            performSearch(keyword, this.getAttribute('data-category'));
+          }
+        });
+      });
+      
+      // 排序功能
+      const sortBtns = document.querySelectorAll('.sort-btn');
+      sortBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // 移除所有排序按钮的活动状态
+          sortBtns.forEach(b => b.classList.remove('active'));
+          // 为当前按钮添加活动状态
+          this.classList.add('active');
+          // 重新排序搜索结果
+          if (keyword) {
+            sortResults(this.getAttribute('data-sort'));
+          }
+        });
+      });
+    });
+    
+    /**
+     * 执行搜索并显示结果
+     * @param {string} keyword - 搜索关键词
+     * @param {string} category - 可选的分类筛选
+     */
+    function performSearch(keyword, category = 'all') {
+      const resultsContainer = document.getElementById('search-results-container');
+      
+      // 清空当前结果
+      resultsContainer.innerHTML = '';
+      
+      // 模拟API搜索结果数据
+      const searchResults = getSearchResults(keyword, category);
+      
+      // 更新结果数量
+      document.getElementById('search-result-count').textContent = searchResults.length;
+      
+      // 如果没有搜索结果
+      if (searchResults.length === 0) {
+        showEmptyState(`没有找到与"${keyword}"相关的${category !== 'all' ? getCategoryName(category) + '的' : ''}内容`);
+        return;
+      }
+      
+      // 显示搜索结果
+      searchResults.forEach(result => {
+        const resultElement = document.createElement('div');
+        resultElement.className = `search-result-item ${result.category}`;
+        resultElement.innerHTML = `
+          <h3><a href="${result.url}">${highlightKeyword(result.title, keyword)}</a></h3>
+          <div class="result-meta">
+            <span class="result-category">${getCategoryName(result.category)}</span>
+            <span class="result-date">${result.date}</span>
+          </div>
+          <p class="result-excerpt">${highlightKeyword(result.excerpt, keyword)}</p>
+          <div class="result-link">
+            <a href="${result.url}">阅读更多</a>
+          </div>
+        `;
+        resultsContainer.appendChild(resultElement);
+      });
+      
+      // 初始化分页
+      initPagination(searchResults.length);
+    }
+    
+    /**
+     * 显示空搜索结果状态
+     * @param {string} message - 要显示的消息
+     */
+    function showEmptyState(message) {
+      const resultsContainer = document.getElementById('search-results-container');
+      resultsContainer.innerHTML = `
+        <div class="search-empty-state">
+          <div class="empty-icon">😕</div>
+          <h3>未找到结果</h3>
+          <p>${message}</p>
+        </div>
+      `;
+      
+      // 隐藏分页
+      document.getElementById('search-pagination').style.display = 'none';
+    }
+    
+    /**
+     * 高亮关键词
+     * @param {string} text - 原始文本
+     * @param {string} keyword - 要高亮的关键词
+     * @return {string} - 包含高亮HTML标记的文本
+     */
+    function highlightKeyword(text, keyword) {
+      if (!keyword) return text;
+      const regex = new RegExp(keyword, 'gi');
+      return text.replace(regex, match => `<span class="keyword-highlight">${match}</span>`);
+    }
+    
+    /**
+     * 获取分类名称
+     * @param {string} categoryCode - 分类代码
+     * @return {string} - 分类的中文名称
+     */
+    function getCategoryName(categoryCode) {
+      const categories = {
+        'news': '物流运输新闻',
+        'trucks': '货车品牌价格',
+        'insurance': '货运保险知识',
+        'claims': '出险理赔须知'
+      };
+      return categories[categoryCode] || '其他';
+    }
+    
+    /**
+     * 初始化分页控件
+     * @param {number} totalResults - 搜索结果总数
+     */
+    function initPagination(totalResults) {
+      const paginationElement = document.getElementById('search-pagination');
+      
+      // 如果结果较少，隐藏分页
+      if (totalResults <= 10) {
+        paginationElement.style.display = 'none';
+        return;
+      }
+      
+      // 显示分页
+      paginationElement.style.display = 'flex';
+      
+      // 重置分页按钮状态
+      document.querySelector('.prev-btn').disabled = true;
+      document.querySelector('.next-btn').disabled = false;
+      
+      // 获取所有页码按钮
+      const pageButtons = document.querySelectorAll('.page-number');
+      pageButtons.forEach((btn, index) => {
+        btn.classList.remove('active');
+        if (index === 0) {
+          btn.classList.add('active');
+        }
+      });
+    }
+    
+    /**
+     * 根据指定方式排序结果
+     * @param {string} sortType - 排序方式（relevance或date）
+     */
+    function sortResults(sortType) {
+      const resultsContainer = document.getElementById('search-results-container');
+      const resultItems = Array.from(resultsContainer.querySelectorAll('.search-result-item'));
+      
+      if (resultItems.length === 0) return;
+      
+      // 移除所有结果
+      resultItems.forEach(item => item.remove());
+      
+      // 根据排序方式对结果进行排序
+      resultItems.sort((a, b) => {
+        if (sortType === 'date') {
+          // 按日期排序（降序）
+          const dateA = a.querySelector('.result-date').textContent;
+          const dateB = b.querySelector('.result-date').textContent;
+          return new Date(dateB) - new Date(dateA);
+        } else {
+          // 按相关度排序（默认）
+          return 0; // 这里应该用实际的相关度得分，这里简化处理
+        }
+      });
+      
+      // 重新添加排序后的结果
+      resultItems.forEach(item => {
+        resultsContainer.appendChild(item);
+      });
+    }
+    
+    /**
+     * 模拟获取搜索结果
+     * @param {string} keyword - 搜索关键词
+     * @param {string} category - 分类筛选
+     * @return {Array} - 搜索结果对象数组
+     */
+    function getSearchResults(keyword, category) {
+      // 模拟搜索结果数据
+      const allResults = [
+        {
+          title: '2024年全国物流运行情况通报',
+          category: 'news',
+          date: '2025-02-11',
+          excerpt: '2024年，物流运行总体平稳，社会物流总额增速稳中有升，社会物流成本稳步下降，物流运行效率有所改善。',
+          url: 'pages/logistics_news.html#2024-report'
+        },
+        {
+          title: '物流运行持续优化 仓储需求不断扩大 经济流通愈加通畅',
+          category: 'news',
+          date: '2024-01-03',
+          excerpt: '中国物流与采购联合会公布2023年12月份中国物流业景气指数为53.5%。尽管受年末上游需求放缓和部分地区恶劣天气因素影响...',
+          url: 'pages/logistics_news.html#2023-december'
+        },
+        {
+          title: '2024年货车十大品牌排行榜',
+          category: 'trucks',
+          date: '2025-01-15',
+          excerpt: '福田汽车(FOTON)、东风汽车(DFM)、一汽解放、中国重汽(CNHTC)、江淮汽车(JAC)等位居榜单前列。',
+          url: 'pages/truck_brands.html#ranking'
+        },
+        {
+          title: '新能源货车市场分析',
+          category: 'trucks',
+          date: '2024-04-20',
+          excerpt: '福田奥铃智蓝EL-Plus电动载货车，配备宁德时代电池，容量156.4kWh，续航里程更长，是电动物流车的首选。',
+          url: 'pages/truck_brands.html#new-energy'
+        },
+        {
+          title: '货车保险分类详解',
+          category: 'insurance',
+          date: '2024-05-10',
+          excerpt: '货车保险主要分为交强险和商业险两大类。商业险又分为主险和附加险，包括车辆损失险、第三者责任险等多种险种。',
+          url: 'pages/logistics_insurance.html#classification'
+        },
+        {
+          title: '如何选择合适的货运保险',
+          category: 'insurance',
+          date: '2024-03-18',
+          excerpt: '对于货车司机个人，建议重点关注第三者责任险的保额，因为货车一旦发生事故，造成的第三方损失往往较大。',
+          url: 'pages/logistics_insurance.html#selection'
+        },
+        {
+          title: '物流运输保险与物流责任保险的区别',
+          category: 'insurance',
+          date: '2024-06-05',
+          excerpt: '货物运输保险保障的是货物本身，而物流责任保险保障的是物流企业的赔偿责任，两者投保人和保障范围有明显区别。',
+          url: 'pages/logistics_insurance.html#difference'
+        },
+        {
+          title: '货运险理赔流程详解',
+          category: 'claims',
+          date: '2024-05-22',
+          excerpt: '理赔基本流程包括出险、报案、查勘定损、提交索赔单证、理算复核、赔付、结案七个环节。',
+          url: 'pages/insurance_claims.html#process'
+        },
+        {
+          title: '单方事故与多方事故理赔程序',
+          category: 'claims',
+          date: '2024-04-15',
+          excerpt: '单方事故指不涉及人员伤亡或第三者财物损失的交通事故，而多方事故涉及第三方人员伤亡或财产损失，两者理赔流程有所不同。',
+          url: 'pages/insurance_claims.html#procedure'
+        },
+        {
+          title: '常见货车理赔案例与实务问题',
+          category: 'claims',
+          date: '2024-03-30',
+          excerpt: '案例分析：货车碰撞导致货物损坏、自然灾害导致货物受损的理赔要点和处理方法。',
+          url: 'pages/insurance_claims.html#cases'
+        }
+      ];
+      
+      // 关键词过滤
+      let filteredResults = allResults.filter(result => {
+        return result.title.toLowerCase().includes(keyword.toLowerCase()) || 
+               result.excerpt.toLowerCase().includes(keyword.toLowerCase());
+      });
+      
+      // 分类过滤
+      if (category !== 'all') {
+        filteredResults = filteredResults.filter(result => result.category === category);
+      }
+      
+      return filteredResults;
+    }
+  </script>
+</body>
+</html>

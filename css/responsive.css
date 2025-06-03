@@ -1,0 +1,218 @@
+/* 
+ * 重庆冠齐峰广告中心物流运输行业新闻网站
+ * 响应式样式表
+ */
+
+/* 针对特定屏幕尺寸的媒体查询 */
+
+/* 大型桌面显示器 (1200px 及以上) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+  
+  .news-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 桌面显示器 (992px 到 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .carousel {
+    height: 350px;
+  }
+}
+
+/* 平板电脑 (768px 到 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .main-content {
+    order: 1;
+    padding: 20px;
+  }
+  
+  .ad-sidebar {
+    width: 100%;
+    order: 2;
+    margin-top: 20px;
+  }
+  
+  .ad-container {
+    position: static;
+    height: 150px;
+  }
+  
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .carousel {
+    height: 300px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 18px;
+  }
+  
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
+
+/* 手机 (767px 及以下) */
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+    padding: 0 10px;
+  }
+  
+  .header-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+    margin-bottom: 15px;
+  }
+  
+  nav {
+    margin-left: 0;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 5px;
+  }
+  
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .main-content {
+    padding: 15px;
+    order: 1;
+  }
+  
+  .ad-sidebar {
+    width: 100%;
+    margin-bottom: 15px;
+    order: 2;
+  }
+  
+  .ad-container {
+    height: 120px;
+    position: static;
+  }
+  
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .carousel {
+    height: 250px;
+  }
+  
+  .carousel-caption {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 16px;
+  }
+  
+  .carousel-caption p {
+    font-size: 12px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+  }
+  
+  .news-card-image {
+    height: 180px;
+  }
+  
+  .news-detail-title {
+    font-size: 24px;
+  }
+  
+  .footer-section {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* 小型手机 (575px 及以下) */
+@media (max-width: 575px) {
+  .search-form input[type="text"] {
+    padding: 8px;
+  }
+  
+  .search-form button {
+    padding: 8px 15px;
+  }
+  
+  .carousel {
+    height: 200px;
+  }
+  
+  .carousel-controls {
+    display: none;
+  }
+  
+  .news-card-title {
+    font-size: 16px;
+  }
+  
+  .news-card-content {
+    padding: 15px;
+  }
+  
+  .news-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .news-list-item .date {
+    margin-bottom: 5px;
+  }
+  
+  .news-list-item .source {
+    text-align: left;
+    margin-top: 5px;
+  }
+  
+  .news-detail-title {
+    font-size: 20px;
+  }
+  
+  .news-detail-meta {
+    flex-direction: column;
+  }
+  
+  .news-detail-meta > div {
+    margin-bottom: 5px;
+  }
+}
